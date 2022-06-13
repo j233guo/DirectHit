@@ -14,6 +14,7 @@
 		C940225D28568AE90056A936 /* DirectHitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940225C28568AE90056A936 /* DirectHitTests.swift */; };
 		C940226728568AE90056A936 /* DirectHitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940226628568AE90056A936 /* DirectHitUITests.swift */; };
 		C940226928568AE90056A936 /* DirectHitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940226828568AE90056A936 /* DirectHitUITestsLaunchTests.swift */; };
+		C94022782856AEF40056A936 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94022772856AEF40056A936 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C940226228568AE90056A936 /* DirectHitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DirectHitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C940226628568AE90056A936 /* DirectHitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHitUITests.swift; sourceTree = "<group>"; };
 		C940226828568AE90056A936 /* DirectHitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C94022772856AEF40056A936 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +96,9 @@
 		C940224A28568AE90056A936 /* DirectHit */ = {
 			isa = PBXGroup;
 			children = (
+				C94022762856AE000056A936 /* Views */,
+				C94022752856ADF60056A936 /* Models */,
 				C940224B28568AE90056A936 /* DirectHitApp.swift */,
-				C940224D28568AE90056A936 /* ContentView.swift */,
 				C940224F28568AE90056A936 /* Assets.xcassets */,
 				C940225128568AE90056A936 /* Preview Content */,
 			);
@@ -125,6 +128,22 @@
 				C940226828568AE90056A936 /* DirectHitUITestsLaunchTests.swift */,
 			);
 			path = DirectHitUITests;
+			sourceTree = "<group>";
+		};
+		C94022752856ADF60056A936 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C94022772856AEF40056A936 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C94022762856AE000056A936 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C940224D28568AE90056A936 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C940224E28568AE90056A936 /* ContentView.swift in Sources */,
+				C94022782856AEF40056A936 /* Game.swift in Sources */,
 				C940224C28568AE90056A936 /* DirectHitApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
