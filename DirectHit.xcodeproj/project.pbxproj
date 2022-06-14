@@ -16,6 +16,8 @@
 		C940226928568AE90056A936 /* DirectHitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940226828568AE90056A936 /* DirectHitUITestsLaunchTests.swift */; };
 		C94022782856AEF40056A936 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94022772856AEF40056A936 /* Game.swift */; };
 		C9B151AE28581353003294DB /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151AD28581353003294DB /* TextViews.swift */; };
+		C9B151B028583A89003294DB /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151AF28583A89003294DB /* RoundedViews.swift */; };
+		C9B151B228583E22003294DB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151B128583E22003294DB /* BackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		C940226828568AE90056A936 /* DirectHitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C94022772856AEF40056A936 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		C9B151AD28581353003294DB /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
+		C9B151AF28583A89003294DB /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
+		C9B151B128583E22003294DB /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			children = (
 				C940224D28568AE90056A936 /* ContentView.swift */,
 				C9B151AD28581353003294DB /* TextViews.swift */,
+				C9B151AF28583A89003294DB /* RoundedViews.swift */,
+				C9B151B128583E22003294DB /* BackgroundView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B151B228583E22003294DB /* BackgroundView.swift in Sources */,
 				C940224E28568AE90056A936 /* ContentView.swift in Sources */,
 				C9B151AE28581353003294DB /* TextViews.swift in Sources */,
+				C9B151B028583A89003294DB /* RoundedViews.swift in Sources */,
 				C94022782856AEF40056A936 /* Game.swift in Sources */,
 				C940224C28568AE90056A936 /* DirectHitApp.swift in Sources */,
 			);

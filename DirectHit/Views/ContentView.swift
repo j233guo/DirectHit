@@ -54,6 +54,10 @@ struct HitMeButton: View {
         )
         .foregroundColor(Color.white)
         .cornerRadius(20.0)
+        .overlay(
+            RoundedRectangle(cornerRadius: 20.0)
+                .strokeBorder(Color.white, lineWidth: 2.0)
+        )
         .alert(isPresented: $alertIsVisible) {
             let roundedValue = Int(sliderValue.rounded())
             return Alert(title: Text("Hello there"),
@@ -70,8 +74,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color("BackgroundColor")
-                .ignoresSafeArea()
+            BackgroundView(game: $game)
             VStack {
                 InstructionView(game: $game)
                 SliderView(sliderValue: $sliderValue)
