@@ -76,10 +76,12 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView(game: $game)
-            VStack {
-                InstructionView(game: $game)
+            ZStack {
                 SliderView(sliderValue: $sliderValue)
-                HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                VStack(spacing: 120) {
+                    InstructionView(game: $game)
+                    HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                }
             }
         }
     }
@@ -88,7 +90,7 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
             .previewInterfaceOrientation(.portrait)
         ContentView()
             .previewInterfaceOrientation(.landscapeLeft)
