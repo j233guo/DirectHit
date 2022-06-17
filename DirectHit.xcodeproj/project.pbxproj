@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C933215C285C229700F1AF7A /* PointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C933215B285C229700F1AF7A /* PointsView.swift */; };
 		C940224C28568AE90056A936 /* DirectHitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940224B28568AE90056A936 /* DirectHitApp.swift */; };
 		C940224E28568AE90056A936 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C940224D28568AE90056A936 /* ContentView.swift */; };
 		C940225028568AE90056A936 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C940224F28568AE90056A936 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C933215B285C229700F1AF7A /* PointsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsView.swift; sourceTree = "<group>"; };
 		C940224828568AE90056A936 /* DirectHit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DirectHit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C940224B28568AE90056A936 /* DirectHitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHitApp.swift; sourceTree = "<group>"; };
 		C940224D28568AE90056A936 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				C9B151AD28581353003294DB /* TextViews.swift */,
 				C9B151AF28583A89003294DB /* RoundedViews.swift */,
 				C9B151B128583E22003294DB /* BackgroundView.swift */,
+				C933215B285C229700F1AF7A /* PointsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				C940224E28568AE90056A936 /* ContentView.swift in Sources */,
 				C9B151AE28581353003294DB /* TextViews.swift in Sources */,
 				C9B151B028583A89003294DB /* RoundedViews.swift in Sources */,
+				C933215C285C229700F1AF7A /* PointsView.swift in Sources */,
 				C94022782856AEF40056A936 /* Game.swift in Sources */,
 				C940224C28568AE90056A936 /* DirectHitApp.swift in Sources */,
 			);

@@ -58,13 +58,6 @@ struct HitMeButton: View {
             RoundedRectangle(cornerRadius: 20.0)
                 .strokeBorder(Color.white, lineWidth: 2.0)
         )
-        .alert(isPresented: $alertIsVisible) {
-            let roundedValue = Int(sliderValue.rounded())
-            let points = game.points(sliderValue: roundedValue)
-            return Alert(title: Text("Hello there"), message: Text("The slider value is \(game.points(sliderValue: roundedValue))"), dismissButton: .default(Text("Awesome")){
-                game.startNewRound(points: points)
-            })
-        }
     }
 }
 
@@ -76,12 +69,17 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView(game: $game)
-            ZStack {
-                SliderView(sliderValue: $sliderValue)
-                VStack(spacing: 120) {
-                    InstructionView(game: $game)
+            VStack {
+                InstructionView(game: $game)
+                    .padding(.bottom, alertIsVisible ? 0 : 100)
+                if alertIsVisible {
+                    PointsView(game: $game, sliderValue: $sliderValue, alertIsVisible: $alertIsVisible)
+                } else {
                     HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
                 }
+            }
+            if !alertIsVisible {
+                SliderView(sliderValue: $sliderValue)
             }
         }
     }
