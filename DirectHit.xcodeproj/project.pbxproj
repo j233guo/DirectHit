@@ -19,6 +19,7 @@
 		C9B151AE28581353003294DB /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151AD28581353003294DB /* TextViews.swift */; };
 		C9B151B028583A89003294DB /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151AF28583A89003294DB /* RoundedViews.swift */; };
 		C9B151B228583E22003294DB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B151B128583E22003294DB /* BackgroundView.swift */; };
+		C9F7012B285D4F4000D22A00 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7012A285D4F4000D22A00 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		C9B151AD28581353003294DB /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
 		C9B151AF28583A89003294DB /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		C9B151B128583E22003294DB /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		C9F7012A285D4F4000D22A00 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				C94022772856AEF40056A936 /* Game.swift */,
+				C9F7012A285D4F4000D22A00 /* Constants.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				C9B151B228583E22003294DB /* BackgroundView.swift in Sources */,
 				C940224E28568AE90056A936 /* ContentView.swift in Sources */,
 				C9B151AE28581353003294DB /* TextViews.swift in Sources */,
+				C9F7012B285D4F4000D22A00 /* Constants.swift in Sources */,
 				C9B151B028583A89003294DB /* RoundedViews.swift in Sources */,
 				C933215C285C229700F1AF7A /* PointsView.swift in Sources */,
 				C94022782856AEF40056A936 /* Game.swift in Sources */,
