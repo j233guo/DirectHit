@@ -39,8 +39,11 @@ struct HitMeButton: View {
     @Binding var game: Game
     
     var body: some View {
+        
         Button {
-            alertIsVisible = true
+            withAnimation {
+                alertIsVisible = true
+            }
         } label: {
             Text("hit me".uppercased())
                 .bold()
@@ -56,7 +59,7 @@ struct HitMeButton: View {
         .cornerRadius(20.0)
         .overlay(
             RoundedRectangle(cornerRadius: 20.0)
-                .strokeBorder(Color.white, lineWidth: 2.0)
+                .strokeBorder(Color.white, lineWidth: Constants.General.strokeWidth)
         )
     }
 }
@@ -72,14 +75,18 @@ struct ContentView: View {
             VStack {
                 InstructionView(game: $game)
                     .padding(.bottom, alertIsVisible ? 0 : 100)
+                
                 if alertIsVisible {
                     PointsView(game: $game, sliderValue: $sliderValue, alertIsVisible: $alertIsVisible)
+                        .transition(.scale)
                 } else {
                     HitMeButton(alertIsVisible: $alertIsVisible, sliderValue: $sliderValue, game: $game)
+                        .transition(.scale)
                 }
             }
             if !alertIsVisible {
                 SliderView(sliderValue: $sliderValue)
+                    .transition(.scale)
             }
         }
     }

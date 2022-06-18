@@ -15,8 +15,10 @@ struct Game {
     func points(sliderValue: Int) -> Int {
         let difference = abs(sliderValue - target)
         var result = 100 - difference
+        // If the slider value is right equal to the target there's a bonus of 100 points
         if difference == 0 {
             result += 100
+        // If the slider value is less than 2 off the target there's a bonus of 50 points
         } else if difference <= 2 {
             result += 50
         }
