@@ -57,4 +57,10 @@ class DirectHitTests: XCTestCase {
         XCTAssertEqual(game.score, 0)
         XCTAssertEqual(game.round, 1)
     }
+    
+    func testLeaderBoard() {
+        game.startNewRound(points: 100)
+        XCTAssertEqual(game.leaderboardEntries.count, 1)
+        XCTAssertEqual(game.leaderboardEntries[0].score, 100)
+    }
 }
